@@ -6,9 +6,38 @@ import Cart from './navMedia/cart.png';
 import Search from './navMedia/search.png';
 
 export default class Nav extends Component{
+    constructor(){
+        super()
+    
+          this.state = {
+            navScroll: 0,
+            headerP: true
+          }
+    
+        this.handleScroll = this.handleScroll.bind(this);
+      }
+    
+      componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, true);
+      };
+    
+      
+      handleScroll(event){
+    
+        var scrollProp = document.getElementById('ScrollProp');
+    
+          if(this.state.navScroll < scrollProp.scrollTop){
+            this.setState({ headerP: false})
+          }else if(this.state.navScroll > scrollProp.scrollTop){
+            this.setState({headerP: true})
+          }
+          this.setState({navScroll: scrollProp.scrollTop});
+          console.log(scrollProp.scrollTop, "scrollTop")
+      }
+
     render(){
         return (
-            <div className="navBody">
+            <div  event='scroll' className={this.state.headerP ? 'navBody' : 'navBody theHead2'}>
 
                 <img className="LogoOne" src={Logo} alt="LogoOne"/>
 
@@ -21,6 +50,7 @@ export default class Nav extends Component{
                 </div>
 
             </div>
+
         )
     }
 }

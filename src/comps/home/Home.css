@@ -15,6 +15,8 @@
     position: relative;
     z-index: -1;
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
@@ -38,14 +40,21 @@
     justify-content: center;
     padding: 0px;
     margin: 0px;
-    /* width: 100vw;
-    height: 100vh; */
-    position: relative;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    
+    /* min-height: 100%;
+    min-width: 100%; */
+    overflow: hidden;
+
 }
 
 .slides{
-    min-height: 100%;
-    min-width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+
+    object-fit: cover;
     filter: brightness(80%);
     position: absolute;
 }

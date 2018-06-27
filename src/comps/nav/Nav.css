@@ -8,6 +8,10 @@
     /* background-color: rgb(0, 0, 0, .3); */
     width: 100vw;
     height:120px;
+    position: fixed;
+    transition: top 0.5s;
+    z-index: 50;
+    top: 0;
 }
 
 .LogoOne{
@@ -33,6 +37,18 @@
     width: 30px;
     margin: 5px;
 }
+
+.theHead{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display:block;
+    transition: top 0.3s;
+  }
+  
+  .theHead2{
+    top: -100px;
+  }
 
 /* #D2B1DB pink lavender
 #FFE0A6 navajo white

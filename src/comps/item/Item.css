@@ -1,0 +1,16 @@
+.itemBody{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    /* overflow-x: hidden; */
+    overflow: auto;
+    height: 100vh;
+    background-color: fefff9;
+}
+
+.stuff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+}

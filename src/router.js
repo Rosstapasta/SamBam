@@ -6,8 +6,8 @@ export default class Router extends Component{
     render(){
         return(
             <Switch>
-                <Route path='/' component={ Home }/>
-                {/* <Route path='/' component={ Item }/> */}
+                <Route path='/' component={ Home } exact/>
+                <Route path='/item' component={ Item }/>
             </Switch>
         )
     }
