@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+.navBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0, .3); */
+    width: 100vw;
+    height:120px;
+}
+
+.LogoOne{
+    width: 450px;
+    position: relative;
+
+}
+
+.elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text{
+    margin: 15px;
+    font-family: 'Limelight';
+    color: #B1C5ED;
+}
+
+.iconNav{
+    width: 30px;
+    margin: 5px;
+}
+
+/* #D2B1DB pink lavender
+#FFE0A6 navajo white
+#FEFFF9 baby powder
+#B1C5ED pale cornflower blue
+#B9A1C4 lilac */
