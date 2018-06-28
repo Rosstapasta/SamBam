@@ -58,3 +58,33 @@
     filter: brightness(80%);
     position: absolute;
 }
+
+.classDots{
+    position: absolute;
+    top: 86%;
+    display: inline-flex;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+.classDots li{
+    margin: 10px;
+    color: transparent;
+}
+
+.classDots li button{
+    background-color: #ffe0a6;
+    color: transparent;
+    border-radius: 30px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.classDots .slick-active button{
+    background-color: #B1C5ED;
+    outline: none;
+}
